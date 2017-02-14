@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QE CompSci & Robotics</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta charset="utf-8"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">QE CompSci & Robotics</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About/Opportunities</a></li>
+            <li class="active"><a href="events.html">Events</a></li>
+            <li><a href="mercer.html">Mercer's Kitchen</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Computer Science and Robotics Events</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img id="img" class="displayed"  src="Hackathon Image.JPG" alt="Hackathon" style="max-height:500px; height:500px; margin:0 auto">
+              <div class="carousel-caption">
+                <h4>Hackathon</h4>
+              </div>
+              </div>
+
+              <div class="item">
+                <img id="img"class="displayed"  src="https://d1pbog36rugm0t.cloudfront.net/-/media/science/departments/computing-science1/outreach/hiptates.jpg?w=1200" alt="open house" style="max-height:500px; height:500px; margin:0 auto">
+                <div class="carousel-caption">
+                  <a data-toggle="modal" data-target="#Tate"><h4>Click to learn more about the Ross and Verna <br>Tate High School Internship Program (HIP)</h4></a>
+                </div>
+              </div>
+
+              <div class="item">
+                <img id="img"class="displayed"  src="vexrob.jpg" alt="open house" style="max-height:500px; height:500px; margin:0 auto">
+                <div class="carousel-caption">
+                  <h4>Open House</h4>
+                  <a data-toggle="modal" data-target="#Vex"><h4>Click to learn more about Vex</h4></a>
+                </div>
+              </div>
+
+            <div class="item">
+              <img id="img"class="displayed"  src="fair.jpg" alt="FAIR" style="max-height:500px; height:500px; margin:0 auto">
+              <div class="carousel-caption">
+                <h4>Queen Elizabeth Fair for Computer Science and Robotics</h4>
+              </div>
+            </div>
+
+            <div class="item">
+              <img id="img"class="displayed" src="websitePic.JPG" alt="project" style="max-height:500px; height:500px; margin:0 auto">
+              <div class="carousel-caption">
+                <h4>Final Projects Demonstration</h4>
+                <p>Website</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img id="img"class="displayed" src="Legacy_Gaming.jpg" alt="gameing" style="max-height:500px; height:500px; margin:0 auto">
+              <div class="carousel-caption">
+                <h4>Legacy Gaming</h4>
+                <!-- Legacy Gaming/eSports Modal -->
+                <a data-toggle="modal" data-target="#Legacy"><h4>Click to learn more about Legacy Gaming and eSports!</h4></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <img id="img"class="displayed" src="https://uofa.ualberta.ca/computing-science/-/media/science/aboutus/big-menu-ccisaboutus.jpg" alt="uofa" style="max-height:500px; height:500px; margin:0 auto">
+              <div class="carousel-caption">
+                <a data-toggle="modal" data-target="#Iverson"><h4>Click to learn more about the Iverson Exam</h4></a>
+              </div>
+            </div>
+
+            <div class="item">
+              <img id="img"class="displayed" src="RobLib.jpg" alt="rob lib" style="max-height:500px; height:500px; margin:0 auto">
+              <div class="carousel-caption">
+                <h4>Sphero Bowling</h4>
+              </div>
+            </div>
+
+            <div class="item">
+              <img id="img"class="displayed" src="skills.png" alt="skills" style="max-height:500px; height:500px; margin:0 auto">
+              <div class="carousel-caption">
+                <h4>Skills Canada Competitions</h4>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div id="Tate" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Ross and Verna Tate High School Internship Program (HIP)</h4>
+              </div>
+              <div class="modal-body">
+                <p>Do you love computing and want to learn more about it as a career? Are you an high school student in grades 11
+                or 12? Would you like to earn real money over your summer break?</p>
+                <p>The Computing Science High School Internship Program (HIP) is a great way to learn about computing, make new
+                friends and earn money. Plus you’ll have a great job to include on your resume.</p>
+                <br>
+                <h2>About the Internship Program</h2>
+                <p>We choose students based on their grades and their interests. We try to match your interests with an
+                appropriate project.</p>
+                <p>We consider students who demonstrate competence in the core subjects, particularly Math. If you are strong
+                in Math, have taken Career and Technology Studies or are self-taught in computing science, you should apply for
+                our internship program.</p>
+                <p>You will receive ~$1600 for your 6-week term (based on 28 hours per week). With your intern appointment, you
+                will be considered as a "Casual Level 1" employee at the University of Alberta and as such, you will receive 4%
+                vacation pay of your base salary, 3.46% statutory holiday pay and need to pay mandatory deductions of EI, WCB,
+                taxation and union dues.</p>
+                <p>This is a 6-week internship program running in July and August. If you have summer activities that conflict
+                with the work term, you may not be eligible for the program.</p>
+                <a href="https://www.ualberta.ca/computing-science/explore/hs-internships" target="_blank">Find out more about this opportunity</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="Iverson" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Iverson Exam</h4>
+              </div>
+              <div class="modal-body">
+                <h2>The Iverson Computing Science Exam</h2>
+                <p>Named after computing pioneer Ken Iverson, the Iverson exam is a friendly competition to test your Computing Science
+                skills. Starting with problems you might expect to see in high school, the exam goes beyond and exposes you to problems
+                that are a challenge to advanced undergraduates.</p>
+                <p>Writing the Iverson gives you a taste of what it's like to participate in the ACM International Collegiate Programming
+                Contest. Referred to as "The Battle of the Brains," the ACM ICPC World Finals challenges the world's top 100 university
+                teams to use open standard technology in designing software that solve real-world problems. Our U of A programming teams
+                have a very strong track record in competitions and have qualified for the world finals many times.</p>
+                <br>
+                <h2>Computing Science as a Science Entrance Subject</h2>
+                <p>In the Spring of 2009 the University of Alberta made the first major change in entrance requirements in over 30 years
+                by adding CTS Computer Science (CSE) to the list of science admission subjects. Starting in the 2010-2011 academic year
+                it became part of the Group C list (with Biology 30, Chemistry 30, Pure Math 30, Math 31, Physics 30).</p>
+                <p>To enter the Faculty of Science students can now select any two from Bio, Chem, Physics, Math 31, and CSE. The U of A
+                was closely followed by the University of Calgary, and the University of Lethbridge. Grant MacEwan University and other
+                post-secondary Alberta schools are planning to follow.</p>
+                <p>Many Edmonton area high schools are offering the new CSE courses. Others are planning to in the near future.</p>
+                <h2>About Ken Iverson</h2>
+                <p>To honour a great Albertan, the exam is named after Dr. Ken Iverson.</p>
+                <p>Dr. Ken Iverson developed the concise mathematical notation that formed the foundation for APL (A Programming
+                Language). He joined IBM in 1960 where he made an historic contribution to Computing Science by developing APL into
+                an Interactive programming language widely used in academic and commercial applications.</p>
+                <p>Dr. Iverson was an original thinker who won numerous awards including the Turing Award, in 1979. There have been
+                only two Canadian-born winners of the Turing Award, which is considered to be the Nobel Prize of Computing Science.</p>
+                <a href="https://www.ualberta.ca/computing-science/explore/iverson-exam" target="_blank">Find out more about this opportunity</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="Vex" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">VEX Robotics</h4>
+              </div>
+              <div class="modal-body">
+                <br>
+                <img src="vex.png" width="100%" style="padding:10px"/>
+                <br>
+                <img src="vexrob.jpg" width="100%" style="padding:10px"/>
+                <br>
+                <img src="PlayingRoboticSoccer_opt.jpg" width="100%" style="padding:10px"/>
+                <br>
+                <img src="IMG_9704.JPG" width="100%" style="padding:10px"/>
+                <br>
+                <img src="IMG_9384.JPG" width="100%" style="padding:10px"/>
+                <br>
+                <img src="IMG_0862.JPG" width="100%" style="padding:10px"/>
+                <br>
+                <img src="IMG_0859.JPG" width="100%" style="padding:10px"/>
+                <br>
+                <img src="AreanaGame.jpg" width="100%" style="padding:10px"/>
+                <br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="modal fade" id="Legacy" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Legacy Gaming at Queen Elizabeth</h4>
+              </div>
+              <div class="modal-body">
+                <img src="Legacy_Gaming.jpg" width="100%"/>
+                <ol>
+                  <li>Purpose</li>
+                    <ul class="text-left" style="list-style-type:square">
+                      <li>Using a credit card sized computer to play games with your family – Legacy Style.</li>
+                      <li>Everyone older will have a reason not to win!</li>
+                    </ul>
+                  <li>What is eSports?</li>
+                    <ul class="text-left" style="list-style-type:square">
+                      <li>Imagine earning Scholarships to study at University.
+                      <br>That is eSports!</li>
+                    </ul>
+                  <li>Do students study to be the next eSports “NHL” player for others’ entertainment?</li>
+                    <ul class="text-left" style="list-style-type:square">
+                      <li>No! Most of the jobs for high school students have not even been thought of.</li>
+                    </ul>
+                  <li>What will you need?</li>
+                    <ol class="text-left" >
+                      <p>To set up Retropie on the Raspberry Pi you need to download 3 things:</p>
+                      <li>SD card formatter (<a href="https://www.sdcard.org/downloads/formatter_4/">Link</a>)</li>
+                      <li>Win32diskimager (<a href="https://sourceforge.net/projects/win32diskimager/files/latest/download">Link</a>)</li>
+                      <li>Retropie disk image (<a href="https://retropie.org.uk/download/">Link</a>)</li>
+                      <p>Optional:</p>
+                      <li>7 Zip OR WinRar</li>
+                    </ol>
+                  <li>General Steps</li>
+                    <ol class="text-left">
+                      <li>Prepare the SD Card (<a href="#Prepare_SD" data-toggle="collapse">Click Here</a>)</li>
+                    <!-- Collapse For Prepare SD-->
+                      <div id="Prepare_SD"  class="collapse">
+                        <h3>Preparing the SD Card</h3>
+                          <ol>
+                            <li>1Download the three software pieces above.</li>
+                            <li>Take your microSD card out of the Raspberry Pi, put it into the microSD card reader,
+                              hook that up to your computer (USB Drive).</li>
+                            <li>Notice the drive letter of your microSD Card.</li>
+                            <li>Use the SD card formatter and format the drive (microSD Card).
+                            <br>
+                            No need for special options just use the defaults
+                            <br>
+                            Note, there’s a chance that the capacity of the drive will show up wrong before you format it, don’t worry about it, formatting the card will fix the capacity issue.
+                            <br>
+                            <br>
+                            If you have done a lot of work with your SD Card, Mr. Mercer says the formatting might fail by only erasing the reference
+                            table. You will need to do a complete erase. Please talk with him about the details.</li>
+                            <li>1.	Once the SD card has been formatted, put it to the side.</li>
+                          </ol>
+                      </div>
+                    <!-- /Format SD -->
+
+
+                    <li>Writing the unzipped image to the SD Card (<a href="#Write_unzipped_Image" data-toggle="collapse">Click Here</a>)</li>
+
+                    <!-- Collapse for Write Image-->
+                    <div id="Write_unzipped_Image"  class="collapse">
+                      <h3>Writing the New Image to the microSD Card (drive)</h3>
+                        <ul class="text-left" style="list-style-type:square">
+                          <li>Extract the disk image out of the .gz file that was downloaded from the Retropie website.</li>
+                            <ul class="text-left" style="list-style-type:circle">
+                              <li>.gz is like a .tar file used like a ZIP file in Linux</li>
+                              <li>“Unzip” this file using 7-Zip or WinRAR, or another program of your choice.</li>
+                              <li>Stop when you see the .img file.</li>
+                            </ul>
+                          <li>Once the image has been extracted note it’s pathway or system of folders</li>
+                          <li>Use Win32DiskImager to write the image to the SD card.
+                            <p>Remember: to right click to open but RUN AS ADMINISTRATOR or similar on your machine
+                              <br>
+                              There will be a few pop up messages warning that this could corrupt the device, this is fine,
+                              continue on and press OK if you get these messages.</p></li>
+                          <li>Ensure the Pathway is correct – where the file is coming from.
+                            <br>Ensure the drive is the correct letter as the microSD Card.
+                            <br>Press the WRITE Button.</li>
+                          <li>Once the image is written to the SD card, dismount the drive (safely remove or eject the microSD card reader) and put the microSD card back into the Raspberry Pi.</li>
+                        </ul>
+                    </div>
+                    <!-- /Write Image -->
+
+                    <li>Getting your RPi going at Home(<a href="#RPiHome" data-toggle="collapse">Click Here</a>)</li>
+
+                    <!-- Collapse for RPi @ Home-->
+                    <div id="RPiHome"  class="collapse">
+                      <h3>Connecting your RPi at home</h3>
+                        <ol class="text-left">
+                          <li>Hook up the Raspberry Pi to a TV or monitor.</li>
+                            <ul class="text-left" style="list-style-type:square">
+                              <li>You will need a keyboard; mouse isn’t necessary but nice if you like the GUI.</li>
+                              <li>An internet connection is required for some of the steps ahead, an ethernet cable is recommended because I experienced issues trying to connect over WiFi, though I will include how to connect to WiFi in the steps</li>
+                              <li>I also recommend having a wired controller (xbox 360, ps4, third party) hooked up.  This is not needed since the keyboard will do.</li>
+                            </ul>
+                          <li>Once the Raspberry Pi is hooked up let it do it’s first time boot up.  This could take a minute or two so be patient.</li>
+                          <li>Once the first-time-setup is finished you will see a screen that asks for controller input, hold any button on your controller or keyboard to set up controls for it.</li>
+                          <li>Assign the controls accordingly.  The ones you want to pay attention to are the ‘start’, ‘a’ and ‘d-pad’ keys, as these keys will be used to navigate the menus.  You can assign nothing to a key by holding down any key when it asks you to input one.  You can also reassign the keys from the start menu if you are unhappy with your selection later.</li>
+                          <li>Once you have finished selecting your controls navigate to the Retropie options section (by default it should be the icon you start on, it looks very similar to the Retropie boot up screen).</li>
+                          <li>If you are connected to the internet through wifi: (Skip this step if you are connected to the internet through ethernet cable)
+                            <br>
+                            Once there go down to the option that let’s you set up WiFi.  A BIOS looking screen will pop up, from here you need to use the arrow keys on your keyboard and the enter button, a controller will not work on these screens.  Navigate to your WiFi network and input the proper password and connect.  I had a couple of issues connecting even when I was inputting the proper password, if this happens to you wait five minutes and try again and or reset your router.  If the problems persist then see if you can get a hold of an ethernet cable.
+                          </li>
+                          <li>Once we are connected to the internet navigate back to the main Retropie options menu.  From here we will go down to the RaspPi options.  We come to another BIOS looking screen.  We don’t really want to mess with any of the options here except for one, go down to the advanced options and then select memory allocation.  Here we want to input 256.  We want to back out to the main Retropie options menu.</li>
+                      </ol>
+                      </div>
+                    <!-- /RPi @ Home -->
+
+                <li>Installing Emulators and ROMs (<a href="#EmulatorsROMs" data-toggle="collapse">Click Here</a>)</li>
+                    <!-- Collapse for Emulators&ROMs-->
+                      <div id="EmulatorsROMs"  class="collapse">
+                        <h3>Installing Emulators and ROMs:</h3>
+                          <ol class="text-left">
+                              <li>Once back at the menu select the RetroPie setup option.  Here we come to our third and final ‘BIOS’ screen.  Go down to where it says install individual emulators from binary or source.  Go through the list and install anything that strikes your fancy, just make sure to install the binaries and not the source, the source can take 3 times as long to install.</li>
+                              <li>Once we have all of our emulators installed, back out of the BIOS menus and go back to the main menu, it’s time to load up our Raspberry Pi with ROMs.</li>
+                                  <ul class="text-left" style="list-style-type:square">
+                                      <li>You need a USB for this step, it doesn’t need to be big (1GB will do) unless you’re loading PSX games.</li>
+                                      <li>First format the USB by putting it into your computer or laptop and right clicking the drive in my computer and selecting the format option.  Make sure to remove anything valuable from the USB before you format it.</li>
+                                      <li>Once it’s formatted plug it into the Raspberry pi and leave it alone for 30 seconds or so, or until the light on the USB (if it has one) stops blinking.</li>
+                                      <li>Plug the USB back into the computer and there should be a folder named rom in there will be other folders that have the name of different system (NES, SNES, n64, PSX, etc).  Put your ROMs into their proper folders within the USB (n64 ROMs in n64 folder).</li>
+                                      <li>To transfer the ROMs into the Raspberry Pi, you need to put the USB back into the Raspberry Pi and wait until the light stops blinking, it will blink in intervals so make sure that it doesn’t blink for a good minute before you remove it.  If your USB has no light then just wait 5 to 15 minutes (it depends on how much you put onto the USB) before removing it.</li>
+                                      <li>Once the USB has transferred over the ROMs take your controller or keyboard and press the start button (or whatever you assigned it to on the keyboard) and go to quit, there it will have a couple options, chose the one that says “restart emulation station.”  Once the software has rebooted your ROMs should be there and ready to play.</li>
+
+                                  </ul>
+                      </ol>
+                      </div>
+                    <!-- /Emulators&ROMs -->
+                    <li>Play and Enjoy!</li>
+                  </ol>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

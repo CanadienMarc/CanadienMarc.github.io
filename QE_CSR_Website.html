@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>CS & Robotics | Queen Elizabeth High School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+  body {
+        font: 20px Montserrat, sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+      }
+  .margin {
+      margin-bottom: 45px;
+      }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      }
+
+/* Backgrounds */
+  .bg-1 {
+        background-color: #330066; /* Purple  */
+        color: #FFFF00;
+        }
+  .bg-2 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+        }
+  .bg-3 {
+        background-color: #FFFF00; /* yellow */
+        color: #330066;
+        }
+  .bg-4 {
+        background-color: #2f2f2f; /* Black Gray */
+        color: #fff;
+        }
+/* Font */
+    p {
+        font-size: 16px;
+      }
+    a {
+      color:inherit;
+      }
+    a:hover {
+      color: inherit !important;
+      }
+    a:active {
+      color: inherit !important;
+      }
+    a:visited {
+      color: inherit !important;
+      }
+  .bg-1 h1 {
+      color: #330066;
+      text-shadow:1px 1px 0 #FFFF00,
+      -1px -1px 0 #FFFF00,
+      1px -1px 0 #FFFF00,
+      -1px 1px 0 #FFFF00,
+      0px 1px 0 #FFFF00,
+      1px 0px 0 #FFFF00,
+      0px -1px 0 #FFFF00,
+      -1px 0px 0 #FFFF00,
+      4px 4px 3px #000;
+      }
+  .bg-2 h1 {
+      color: #FFFF00;
+      text-shadow:1px 1px 0 #330066,
+      -1px -1px 0 #330066,
+      1px -1px 0 #330066,
+      -1px 1px 0 #330066,
+      0px 1px 0 #330066,
+      1px 0px 0 #330066,
+      0px -1px 0 #330066,
+      -1px 0px 0 #330066,
+      4px 4px 3px #000;
+      }
+  .bg-2 h2 {
+      color: #330066;
+      }
+  .bg-3 h1 {
+      color:#330066;
+      text-shadow:1px 1px 0 #fff,
+      -1px -1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+      0px 1px 0 #fff,
+      1px 0px 0 #fff,
+      0px -1px 0 #fff,
+      -1px 0px 0 #fff,
+      4px 4px 3px #000;
+      }
+
+/* Navbar */
+  #nav {
+      width:95%;
+      }
+  .navbar {
+      background-color: #2f2f2f;
+      padding-top:none;
+      padding-bottom: 70px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      }
+  .navbar-default {
+      height:110px;
+      }
+  .navbar-header {
+      padding-top: none;
+      padding-bottom: none;
+      align-content: top;
+      }
+  .navbar-nav li a {
+      font-size:20px;
+      padding-top: 55px;
+      padding-bottom: 30px;
+      }
+  .navbar-nav  li a:hover {
+      color: #FFFF00 !important;
+      }
+  .navbar-nav  li a {
+      color: #FFF !important;
+      }
+
+/* Modals */
+  .modal-header {
+      background-color: #FFFF00;
+      }
+  .modal-title {
+      color:#330066;
+      }
+  .modal-footer {
+      background-color: #FFFF00;
+      }
+  .modal-body {
+      color: #555555;;
+      }
+  /* Carousel logos*/
+
+  #logoimg {
+      min-height: 200px;
+      height:200px;
+      margin: 0 auto;
+      }
+
+  /* Carousel Events*/
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: inherit;
+      }
+  .carousel-indicators li {
+      border-color: #330066;
+      }
+  .carousel-indicators li.active {
+      background-color: #330066;
+      }
+  .carousel-caption h1 {
+      color:#330066;
+      text-shadow:1px 1px 0 #fff,
+      -1px -1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+      0px 1px 0 #fff,
+      1px 0px 0 #fff,
+      0px -1px 0 #fff,
+      -1px 0px 0 #fff,
+      4px 4px 3px #000;
+      }
+  .carousel-caption p {
+      font-style: italic;
+      }
+  /*.carousel .item {
+      height: 300px;
+      }*/
+  .item img {
+      position: center;
+      }
+  #img {
+      min-height: 300px;
+      height:300px;
+      margin: 0 auto;
+      }
+
+/* Kassie And Alexandra section*/
+  #us{
+      color:#330066;
+      text-shadow:1px 1px 0 #FFFF00,
+      -1px -1px 0 #FFFF00,
+      1px -1px 0 #FFFF00,
+      -1px 1px 0 #FFFF00,
+      0px 1px 0 #FFFF00,
+      1px 0px 0 #FFFF00,
+      0px -1px 0 #FFFF00,
+      -1px 0px 0 #FFFF00,
+      4px 4px 3px #000;
+      }
+  #border {
+      padding:9px;
+      background-color: #330066;
+      border:9px solid #FFFF00;
+      }
+/*Accordion*/
+  .panel{
+      background-color: #330066;
+      color: #FFFF00;
+      }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <a class="navbar-brand" href="#"><img src="Logo.png" alt="logo" width="180" height="90"></a>
+    <div id="nav" class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#a">About / Opportunities</a></li>
+          <li><a href="#mk">Mercer's Kitchen</a></li>
+          <li><a href="#e">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+<!-- First Container -->
+  <div class="container-fluid bg-1 text-center">
+    <h1 class="margin">Welcome to Computer Science & Robotics
+    <br>at Queen Elizabeth High School</h1>
+    <img src="Head.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+    <h3 style="padding-bottom:none;">"We make what we love at the speed of technology!"</h3>
+    <p>Mark Mercer</p>
+  </div>
+<!-- End First Container -->
+
+<!-- Second Container -->
+  <div id="a"class="container-fluid bg-2 text-center">
+    <br>
+    <div class="container">
+        <h1 class="margin">About Computer Science and Robotics</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>What will I learn?</h2>
+          <p>
+          In computer science you will learn how to program in Java, Android and HTML5. With these programing languages you will be able to program apps on your cell phone/tablet,
+          virtual reality headsets and develope your own website. What you learn here at <strong> Queen Elizabeth High School</strong>
+          is the same knowledge as a <strong><font color="#330066">second year university student.</font></strong>
+          <br>
+          In Robotics you will learn about electrical robotic systems, and subsystems that explore different areas.
+          Robotics at <strong>Queen Elizabeth High School</strong> allows students to go from having no robotics experience,
+          to <strong><font color="#330066">programming advanced behaviors.</font></strong>
+          </p>
+          <!-- CAROUSEL of logos -->
+            <br>
+            <div id="logos" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#logos" data-slide-to="0" class="active"></li>
+                <li data-target="#logos" data-slide-to="1"></li>
+                <li data-target="#logos" data-slide-to="2"></li>
+                <li data-target="#logos" data-slide-to="3"></li>
+                <li data-target="#logos" data-slide-to="5"></li>
+                <li data-target="#logos" data-slide-to="6"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img id="logoimg"src="android.jpg" alt="Android">
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="arduino.png" alt="Arduino">
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="html5logo.png" alt="HTML">
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="processing3-logo.png" alt="Processing">
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="rpi.png" alt="RPi">
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="vex.png" alt="VEX">
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#logos" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#logos" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+          <!-- / Carousel for Logos -->
+        </div>
+      <div class="col-sm-6">
+          <h2>What is the fun?</h2>
+          <p>
+          Welcome to the fun side of computer science and robotics! At <strong>Queen Elizabeth</strong> you will explore how computer science and robotics are also about people,
+          solving puzzles, creativity, changing the future and, most of all, having fun. Computer science and robotics are peer
+          driven, so that means that you work with your friends to create programs, robots, or whatever your heart desires.
+          By being part of this program, you will feel like God by building stuff that stays around forever.
+          Being a computer scientist means that you can talk to the computer in its own language and make it do what you want
+          it to do, which ultimately means that you are <font color="#FFCC33">golden</font>.
+          <br></p>
+          <!-- CAROUSEL of photos -->
+            <br>
+            <div id="photos" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#photos" data-slide-to="0" class="active"></li>
+                <li data-target="#photos" data-slide-to="1"></li>
+                <li data-target="#photos" data-slide-to="2"></li>
+                <li data-target="#photos" data-slide-to="3"></li>
+                <li data-target="#photos" data-slide-to="5"></li>
+
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img id="logoimg"src="TruthMeter.jpg" alt="Truth Meter">
+                  <div class="carousel-caption">
+                    <h3>Truth Meter</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="music.jpg" alt="Music Player">
+                  <div class="carousel-caption">
+                    <h3>Music Player Circuit</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="image.png" alt="inside computer">
+                  <div class="carousel-caption">
+                  <h3>Inside a Computer</h3>
+                </div>
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="TravellingClub.JPG" alt="Mr. Mercer">
+                  <div class="carousel-caption">
+                  <h3>Shaking Hands with Robots</h3>
+                </div>
+                </div>
+
+                <div class="item">
+                  <img id="logoimg"src="raspberrypi-arduino-breadboard.jpg" alt="RPi Arduino Breadboard">
+                  <div class="carousel-caption">
+                  <h3>Raspberry Pi, Arduino, and Breadboard</h3>
+                </div>
+                </div>
+
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#photos" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#photos" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+          <!-- / Carousel for photos -->
+      </div>
+      <br>
+      <br>
+      <br>
+        <h2>Opportunities</h2>
+        <p>
+        There are major benefits to taking computer science and/or robotics at Queen Elizabeth. You may find yourself
+        excelling in other areas such as problem solving and working as a team. Choosing to be a computer scientist as a
+        career is a great choice because software is where the jobs are at. Just take a look around you, technology is
+        everywhere and it's growing fast! We need creative minds like your own. By the time you leave high school,
+        you will already know enough to become a professional in your area of interest. So why not be a part of the
+        future? Besides, it is a wonderful feeling when you make your idea into reality.
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- End Second Container -->
+
+<!-- Third Container (Grid) -->
+  <div id="mk"class="container-fluid bg-3 text-center">
+    <br>
+    <h1 class="margin">Mercer's Kitchen</h1>
+    <p style="font-size:30px;">"I will cook in Java, Android, HTML5, Robotics, Operating Systems, and networking."</p>
+    <div class="row">
+  <!-- Mr. Mercer-->
+      <div class="col-sm-4">
+          <img id="Mercer" class="img-rounded" src="mercer.png" alt="Mr. Mercer" width="160">
+          <p>Mr. Mercer is the head of the Computer Science and Robotics department.
+          His computer science and robotics classes are unique because he doesn't teach in a ‘traditional’ way
+          (teacher led),  instead he bases his lessons on our ideas and interests.
+          He gives us the tools and then allows us to explore the language in many ways. If we get stuck he is quick to
+          work things out with us.
+
+        He believes that the experience and opportunities that we gain from the projects we do are most important for students to
+        develop skills for the future. </p>
+
+      </div>
+ <!-- courses & Clubs -->
+      <div class="col-sm-8">
+        <br>
+        <br>
+        <div class="panel-group" id="accordion">
+    <!-- Courses-->
+        <div class="panel panel-default">
+          <div class="panel-header">
+              <h4 class="panel-title">
+              <a id="CC"data-toggle="collapse" data-parent="#accordion" href="#courses"><h1><strong>Courses</strong></h1></a>
+              </h4>
+          </div>
+        <div id="courses" class="panel-collapse collapse in">
+        <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-6">
+          <!-- CS 10 Modal -->
+          <a data-toggle="modal" data-target="#CS10"><h2>Computer Science 10</h2></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="CS10" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Computer Science 10</h4>
+                </div>
+                <div class="modal-body">
+                  <h3>"Communication with websites and apps to reach the devices people use regularly - all about Freedom"</h3>
+  <ul class="text-left"style="list-style-type:square">
+  <li>Building webpages with HTML & CSS and apps in Android.</li>
+  <li>Introducing Algorithms and using these in coding.</li>
+  <li>Structured programming: making sequential code happen differently.</li>
+  <li>Introducing Raspberry Pi's as a device to help form computational thinking and computing as a tool.</li>
+  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CS 20 Modal -->
+          <a data-toggle="modal" data-target="#CS20"><h2>Computer Science 20</h2></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="CS20" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Computer Science 20</h4>
+                </div>
+                <div class="modal-body">
+                  <h3>"Refinement of Websites and Apps: using others' handwork to our benefit"</h3>
+  <ul class="text-left"style="list-style-type:square">
+  <li>Using Raspberry Pi's to focus on the thinking behind programming, coding, and the World Wide Web.</li>
+  <li>Building interactive websites and apps, focusing on data structures especially from other people.</li>
+  <li>Procedural programming: creating the pieces of structured programming.</li>
+  </ul>                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CS 30 Modal -->
+          <a data-toggle="modal" data-target="#CS30"><h2>Computer Science 30</h2></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="CS30" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Computer Science 30</h4>
+                </div>
+                <div class="modal-body">
+                  <h3>"Communication with websites and apps to reach the devices people use regularly - all about Freedom"</h3>
+  <ul class="text-left"style="list-style-type:square">
+  <li>Using Raspberry Pi's specifically as a webserver.</li>
+  <li>Beginning to develop Apps worthy of Google Play and App Store.</li>
+  <li>Developing tools to manage information.</li>
+  <li>Object-oriented Programming: starting the rest of our coding lives.</li>
+  </ul>                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CS 35 Modal -->
+          <a data-toggle="modal" data-target="#CS35"><h2>Computer Science 35(AP)</h2></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="CS35" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Computer Science 35(AP)</h4>
+                </div>
+                <div class="modal-body">
+  <ul class="text-left"style="list-style-type:square">
+    <li>Focus mainly on Java.</li>
+    <li>Make games and build apps.</li>
+      <li>Produce more efficient code styles and practices.</li>
+        <li>Option of two AP Computer Sceince Exams:</li>
+            <ol>
+          <li>#1: traditional CSA Exam used for first year university CS credit</li>
+            <li>#2: CSP Exam also used for first year university CS credit</li>
+            <ol>
+            </ul>
+</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-6">
+          <!-- R 15 Modal -->
+          <a data-toggle="modal" data-target="#R15"><h2>Robotics 15</h2></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="R15" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Robotics 15</h4>
+                </div>
+                <div class="modal-body">
+                  <ul class="text-left"style="list-style-type:square">
+                    <li>learning about electrical robotic systems.</li>
+                <li>Starting with some recycled electronics.</li>
+                <li>Build a robot from paperclips.</li>
+                <li>Build a number of subsystems learning sensors and motors.</li>
+                <li>Build a Truth Meter (Lie Detector), or a Galvanometer.</li>
+                <li>Build a Music Player Circuit.</li>
+              </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- R 25 Modal -->
+          <a data-toggle="modal" data-target="#R25"><h2>Robotics 25</h2></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="R25" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Robotics 25</h4>
+                </div>
+                <div class="modal-body">
+                  <ul class="text-left"style="list-style-type:square">
+                  <li>Review electrical engineering.</li>
+                  <li>Build a Quadcopter.</li>
+                  <li>Build a custom TV remote based on sensing our bodies reactions.</li>
+                </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- R 35 Modal -->
+          <a data-toggle="modal" data-target="#R35"><h2>Robotics 35</h2></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="R35" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Robotics 35</h4>
+                </div>
+                <div class="modal-body">
+  <p>TBA</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CP Modal -->
+          <a data-toggle="modal" data-target="#CP"><h2>Computer Pathways</h2></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="CP" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Computer Pathway with Cisco Academy</h4>
+                </div>
+                <div class="modal-body">
+                  <h2>Two options: Cisco Academy and Project-based learning.</h2>
+                  <ol class="text-left">
+                    <li>Cisco Academy:</li>
+                    <ul class="text-left"style="list-style-type:square">
+                    <li>Networking, routing, and switching for industry standards.</li>
+                  </ul>
+
+                  <li>Project-based course:</li>
+                  <ul class="text-left"style="list-style-type:square">
+                    <li>Students learn exactly what they want to.</li>
+                  <li>Knowledge delivery is through Internet.</li>
+                    <li>Project assessment is co-constructed with students.</li>
+                    <ul>
+                </ol>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+        </div>
+
+</div>
+      </div>
+    </div>
+    <!-- Clubs-->
+    <div class="panel panel-default">
+      <div class="panel-header">
+        <h4 class="panel-title">
+          <a id="CC"data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h1><strong>Clubs</strong></h1></a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+
+          <a href="#TC" data-toggle="collapse"><h2>Traveling Club</h2></a>
+
+          <div id="TC"  class="collapse">
+              <p>If you are passionate about sharing your projects and ideas with others, this club is for you.
+                We travel to elementary and junior high schools to demonstrate our projects so younger students can be
+                inspired and find some common interests.</p>
+          </div>
+          <a href="#MC" data-toggle="collapse"><h2>MacEwan and Queen Elizabeth Development Club</h2></a>
+
+          <div id="MC"  class="collapse">
+              <p>If you are passionate about coding ... we foster mentoring from university to K-12 so the learning of
+                programming can become a real-life experience. These are multi-dimensional groups sharing more than just
+                scripts.</p>
+          </div>
+          <a href="#RC" data-toggle="collapse"><h2>Robotics Club</h2></a>
+
+          <div id="RC"  class="collapse">
+              <p>Passionate about building robots? New to robotics or not, robotics club gives you the opportunity to build systems with
+               electrical engineering and microcontrollers connected to a computer.</p>
+          </div>
+          <a href="#eSC" data-toggle="collapse"><h2>eSports Club</h2></a>
+
+          <div id="eSC"  class="collapse">
+              <p>eSports is about building a gaming system on a Raspberry Pi. If you enjoy gaming, this is perfect for you!
+                We build and then play, a lot.
+                <br>
+                <!-- Legacy Gaming/eSports Modal -->
+                <a data-toggle="modal" data-target="#Legacy">Click to learn more about Legacy Gaming and eSports!</a>
+              </p>
+          </div>
+      </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  </div>
+<!-- End Third Container -->
+
+  <!-- Fourth Container (Grid) MAKE AS A CAROUSEL -->
+  <div id="e" class="bg-1 container-fluid">
+    <br>
+    <h1 class="text-center">Computer Science & Robotics Events</h1>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img id="img" class="displayed"  src="vexrob.jpg" alt="open house">
+          <div class="carousel-caption">
+            <h1>Open House</h1>
+            <p>VEX Robot</p>
+          </div>
+          </div>
+
+
+        <div class="item">
+          <img id="img"class="displayed"  src="fair.jpg" alt="FAIR">
+          <div class="carousel-caption">
+            <h1>Queen Elizabeth Fair for Computer Science and Robotics</h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <img id="img"class="displayed" src="websitePic.JPG" alt="project">
+          <div class="carousel-caption">
+            <h1>Final Projects Demonstration</h1>
+            <p>Website</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img id="img"class="displayed" src="Legacy_Gaming.jpg" alt="gameing" width="auto" height="300">
+          <div class="carousel-caption">
+            <h1>Legacy Gaming</h1>
+            <!-- Legacy Gaming/eSports Modal -->
+            <a data-toggle="modal" data-target="#Legacy"><p>Click to learn more about Legacy Gaming and eSports!</p></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <img id="img"class="displayed" src="https://uofa.ualberta.ca/computing-science/-/media/science/aboutus/big-menu-ccisaboutus.jpg" alt="uofa" width="800" height="450">
+          <div class="carousel-caption">
+            <h1>Full Day Field Trip to the University of Alberta</h1>
+            <p>(Iverson Exam)</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img id="img"class="displayed" src="RobLib.jpg" alt="rob lib">
+          <div class="carousel-caption">
+            <h1>Robotic Library</h1>
+            <p> Sphero Bowling</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img id="img"class="displayed" src="vexComp.jpg" alt="vex">
+          <div class="carousel-caption">
+            <h1>VEX Robotics Competition</h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <img id="img"class="displayed" src="http://skillscompetencescanada.com/en/wp-content/uploads/2011/11/Webdesign.jpg" alt="skills">
+          <div class="carousel-caption">
+            <h1>Skills Canada Competitions</h1>
+            <p>Web Development</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Legacy" role="dialog">
+                  <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Legacy Gaming at Queen Elizabeth</h4>
+                      </div>
+                      <div class="modal-body">
+                        <ol>
+                          <li>Purpose</li>
+                            <ul class="text-left" style="list-style-type:square">
+                              <li>Using a credit card sized computer to play games with your family – Legacy Style.</li>
+                              <li>Everyone older will have a reason not to win!</li>
+                            </ul>
+                          <li>What is eSports?</li>
+                            <ul class="text-left" style="list-style-type:square">
+                              <li>Imagine earning Scholarships to study at University.
+                              <br>That is eSports!</li>
+                            </ul>
+                          <li>Do students study to be the next eSports “NHL” player for others’ entertainment?</li>
+                            <ul class="text-left" style="list-style-type:square">
+                              <li>No! Most of the jobs for high school students have not even been thought of.</li>
+                            </ul>
+                          <li>What will you need?</li>
+                            <ol class="text-left" >
+                              <p>To set up Retropie on the Raspberry Pi you need to download 3 things:</p>
+                              <li>SD card formatter (<a href="https://www.sdcard.org/downloads/formatter_4/">Link</a>)</li>
+                              <li>Win32diskimager (<a href="https://sourceforge.net/projects/win32diskimager/files/latest/download">Link</a>)</li>
+                              <li>Retropie disk image (<a href="https://retropie.org.uk/download/">Link</a>)</li>
+                              <p>Optional:</p>
+                              <li>7 Zip OR WinRar</li>
+                            </ol>
+                          <li>General Steps</li>
+                            <ol class="text-left">
+                              <li>Prepare the SD Card (<a href="#Prepare_SD" data-toggle="collapse">Click Here</a>)</li>
+                            <!-- Collapse For Prepare SD-->
+                              <div id="Prepare_SD"  class="collapse">
+                                <h3>Preparing the SD Card</h3>
+                                  <ol>
+                                      <li>1Download the three software pieces above.</li>
+                                      <li>Take your microSD card out of the Raspberry Pi, put it into the microSD card reader,
+                                        hook that up to your computer (USB Drive).</li>
+                                      <li>Notice the drive letter of your microSD Card.</li>
+                                      <li>Use the SD card formatter and format the drive (microSD Card).
+                                      <br>
+                                      No need for special options just use the defaults
+                                      <br>
+                                      Note, there’s a chance that the capacity of the drive will show up wrong before you format it, don’t worry about it, formatting the card will fix the capacity issue.
+                                      <br>
+                                      <br>
+                                      If you have done a lot of work with your SD Card, Mr. Mercer says the formatting might fail by only erasing the reference
+                                      table. You will need to do a complete erase. Please talk with him about the details.</li>
+                                      <li>1.	Once the SD card has been formatted, put it to the side.</li>
+                                    </ol>
+                            </div>
+                            <!-- /Format SD -->
+
+
+                            <li>Writing the unzipped image to the SD Card (<a href="#Write_unzipped_Image" data-toggle="collapse">Click Here</a>)</li>
+
+                            <!-- Collapse for Write Image-->
+                            <div id="Write_unzipped_Image"  class="collapse">
+                              <h3>Writing the New Image to the microSD Card (drive)</h3>
+                                <ul class="text-left" style="list-style-type:square">
+                                  <li>Extract the disk image out of the .gz file that was downloaded from the Retropie website.</li>
+                                    <ul class="text-left" style="list-style-type:circle">
+                                      <li>.gz is like a .tar file used like a ZIP file in Linux</li>
+                                      <li>“Unzip” this file using 7-Zip or WinRAR, or another program of your choice.</li>
+                                      <li>Stop when you see the .img file.</li>
+                                    </ul>
+                                  <li>Once the image has been extracted note it’s pathway or system of folders</li>
+                                  <li>Use Win32DiskImager to write the image to the SD card.
+                                    <p>Remember: to right click to open but RUN AS ADMINISTRATOR or similar on your machine
+                                      <br>
+                                      There will be a few pop up messages warning that this could corrupt the device, this is fine,
+                                      continue on and press OK if you get these messages.</p></li>
+                                  <li>Ensure the Pathway is correct – where the file is coming from.
+                                    <br>Ensure the drive is the correct letter as the microSD Card.
+                                    <br>Press the WRITE Button.</li>
+                                  <li>Once the image is written to the SD card, dismount the drive (safely remove or eject the microSD card reader) and put the microSD card back into the Raspberry Pi.</li>
+                                </ul>
+                            </div>
+                            <!-- /Write Image -->
+
+                            <li>Getting your RPi going at Home(<a href="#RPiHome" data-toggle="collapse">Click Here</a>)</li>
+
+                            <!-- Collapse for RPi @ Home-->
+                            <div id="RPiHome"  class="collapse">
+                              <h3>Connecting your RPi at home</h3>
+                                <ol class="text-left">
+                                  <li>Hook up the Raspberry Pi to a TV or monitor.</li>
+                                    <ul class="text-left" style="list-style-type:square">
+                                      <li>You will need a keyboard; mouse isn’t necessary but nice if you like the GUI.</li>
+                                      <li>An internet connection is required for some of the steps ahead, an ethernet cable is recommended because I experienced issues trying to connect over WiFi, though I will include how to connect to WiFi in the steps</li>
+                                      <li>I also recommend having a wired controller (xbox 360, ps4, third party) hooked up.  This is not needed since the keyboard will do.</li>
+                                    </ul>
+                                  <li>Once the Raspberry Pi is hooked up let it do it’s first time boot up.  This could take a minute or two so be patient.</li>
+                                  <li>Once the first-time-setup is finished you will see a screen that asks for controller input, hold any button on your controller or keyboard to set up controls for it.</li>
+                                  <li>Assign the controls accordingly.  The ones you want to pay attention to are the ‘start’, ‘a’ and ‘d-pad’ keys, as these keys will be used to navigate the menus.  You can assign nothing to a key by holding down any key when it asks you to input one.  You can also reassign the keys from the start menu if you are unhappy with your selection later.</li>
+                                  <li>Once you have finished selecting your controls navigate to the Retropie options section (by default it should be the icon you start on, it looks very similar to the Retropie boot up screen).</li>
+                                  <li>If you are connected to the internet through wifi: (Skip this step if you are connected to the internet through ethernet cable)
+                                    <br>
+                                    Once there go down to the option that let’s you set up WiFi.  A BIOS looking screen will pop up, from here you need to use the arrow keys on your keyboard and the enter button, a controller will not work on these screens.  Navigate to your WiFi network and input the proper password and connect.  I had a couple of issues connecting even when I was inputting the proper password, if this happens to you wait five minutes and try again and or reset your router.  If the problems persist then see if you can get a hold of an ethernet cable.
+                                  </li>
+                                  <li>Once we are connected to the internet navigate back to the main Retropie options menu.  From here we will go down to the RaspPi options.  We come to another BIOS looking screen.  We don’t really want to mess with any of the options here except for one, go down to the advanced options and then select memory allocation.  Here we want to input 256.  We want to back out to the main Retropie options menu.</li>
+                              </ol>
+                              </div>
+                            <!-- /RPi @ Home -->
+
+                        <li>Installing Emulators and ROMs (<a href="#EmulatorsROMs" data-toggle="collapse">Click Here</a>)</li>
+                            <!-- Collapse for Emulators&ROMs-->
+                              <div id="EmulatorsROMs"  class="collapse">
+                                <h3>Installing Emulators and ROMs:</h3>
+                                  <ol class="text-left">
+                                      <li>Once back at the menu select the RetroPie setup option.  Here we come to our third and final ‘BIOS’ screen.  Go down to where it says install individual emulators from binary or source.  Go through the list and install anything that strikes your fancy, just make sure to install the binaries and not the source, the source can take 3 times as long to install.</li>
+                                      <li>Once we have all of our emulators installed, back out of the BIOS menus and go back to the main menu, it’s time to load up our Raspberry Pi with ROMs.</li>
+                                          <ul class="text-left" style="list-style-type:square">
+                                              <li>You need a USB for this step, it doesn’t need to be big (1GB will do) unless you’re loading PSX games.</li>
+                                              <li>First format the USB by putting it into your computer or laptop and right clicking the drive in my computer and selecting the format option.  Make sure to remove anything valuable from the USB before you format it.</li>
+                                              <li>Once it’s formatted plug it into the Raspberry pi and leave it alone for 30 seconds or so, or until the light on the USB (if it has one) stops blinking.</li>
+                                              <li>Plug the USB back into the computer and there should be a folder named rom in there will be other folders that have the name of different system (NES, SNES, n64, PSX, etc).  Put your ROMs into their proper folders within the USB (n64 ROMs in n64 folder).</li>
+                                              <li>To transfer the ROMs into the Raspberry Pi, you need to put the USB back into the Raspberry Pi and wait until the light stops blinking, it will blink in intervals so make sure that it doesn’t blink for a good minute before you remove it.  If your USB has no light then just wait 5 to 15 minutes (it depends on how much you put onto the USB) before removing it.</li>
+                                              <li>Once the USB has transferred over the ROMs take your controller or keyboard and press the start button (or whatever you assigned it to on the keyboard) and go to quit, there it will have a couple options, chose the one that says “restart emulation station.”  Once the software has rebooted your ROMs should be there and ready to play.</li>
+
+                                          </ul>
+                              </ol>
+                              </div>
+                            <!-- /Emulators&ROMs -->
+                            <li>Play and Enjoy!</li>
+                          </ol>
+                        </ol>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- / Legacy Gaming Modal-->
+</div>
+
+<!-- Footer : Kassie and Alexandra Section-->
+<footer class="container-fluid bg-4 text-center">
+  <p>Website Made By <strong>Kassie Kovalchuk</strong> and <strong>Alexandra Slugoski</strong></p>
+  <!-- BORDER AROUND PICTURE-->
+  <img id="border" src="OA.png" class="img-thumbnail" alt="Alexandra" width="600" >
+  <div class="row">
+    <!--Kassie-->
+    <div class="col-sm-6">
+    <!--YELLOW NAME-->
+      <h2 id="us">Kassie Kovalchuk</h2>
+      <p>Computer science is something we use everyday, and it is best when it brains people together. Programming is not just about coding or syntax, it teaches skills that you can use in all aspects of your life. Computer science allows me to explore my interests and that I can make anything of my imagination. Your projects have purpose besides just good grades because it’s for yourself, and it’s something you can be passionate about. I built a fridge app for myself that reminds me when my food expires, and its helpful to me. I also built a fully customized and functional weather app that I use everyday. Because technology is fast growing, I believe that everyone should be a part of the development of future technology.
+      </p>
+    </div>
+    <!--Alex-->
+    <div class="col-sm-6">
+    <!--YELLOW-->
+      <h2 id="us">Alexandra Slugoski</h2>
+      <p>To me, computer science is an array of new opportunities, the journey to success. I took robotics in tenth grade just to fill my time
+        table, but soon enough I was hooked! That same year I built a robotic car and did a <a href="https://youtu.be/sN17CRsVYX8"><font color="#FFFF00;">TEDx Talk</font></a>. Then I found that
+        I was more interested in coding things than physically building them, so for grade eleven I took Computer Science. I found that my
+        passion is web development, but who knows? It will probably change when I learn about something else.
+        All I know is that Computer Science is what I want to do for the rest of my life, and the best part is that it is so flexable that you can be doing one thing one day, and wake up the next morning and do something totally different.
+        There is no more 'waiting' for someone else to make it for me, I can do it myself.</p>
+    </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
